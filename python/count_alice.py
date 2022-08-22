@@ -11,6 +11,6 @@ alice_words = alice_txt.split()
 for word in alice_words:
     dict[word] = dict.get(word,0)+1
 
-new_val = max(dict, key= lambda x : dict[x])
+most_used = max(dict, key= lambda x : dict[x])
 
-print('most used word is:',new_val)
+print(most_used,dict[most_used])
